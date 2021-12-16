@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        h1{
+            background-color: #a6f508;
+            color: white;
+            font-size: 50px;
+        }
+
+        a{
+            color: rgb(26, 24, 24);
+            text-decoration: none;
+            font-weight: bold;
+        }    
+
+        a:hover{
+            text-decoration: underline;
+
+            
+        }  
+                   
+        
+        a:active{
+            color:#d6c31c ;
+
+        }
+        .especial{ 
+            background-color: salmon;
+        }
+
+        a.especial::after{
+            content:'♫' ;
+      }
+
+        .especial::before{
+            content:'♫' ;
+            }
+    </style>
+
+</head>
+
+
+<body>
+    <h1>PERSONALIZANDO DE LINKS</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/channel/UC1-vMrm8aCgKfHi_75XpFvw" target="_blank"> Acoustic Greatest Hits.</a></li>
+        <li><a href="https://www.youtube.com/channel/UCIe0lawpFRWMFCTSsJmcwKQ" class="especial" target="_blank">Kenny G </a></li>
+    </ul>
+    
+</body>
+</html>
