@@ -243,7 +243,7 @@ footer {
         }
 }
 
-@media (min-width: 901px) and (max-width: 1400px){ 
+@media (min-width: 902px) and (max-width: 1800px){ 
 
     html, body {
         background-color: rgba(169, 169, 169, 0.178);
@@ -280,17 +280,18 @@ footer {
         }
 
         section.imagem1 > p {
+           
             background-color: rgba(0, 0, 0, 0.363);
         display: block;
         padding-top: 30px;
         padding-bottom: 30px;
         font-size: 15px;
         margin-left: 5px;
-        width: 300px; 
+        width: 500px; 
         height: 450px; 
         font-size: 1.6em;
-        line-height: 2.4em; ;
-            
+        line-height: 2.6em;                 
+                      
            }
         
         section.imagem2 > p {
@@ -300,16 +301,30 @@ footer {
         padding-bottom: 30px;
         font-size: 15px;
         margin-left: 5px;
-        width: 300px; 
+        width: 500px; 
         height: 450px; 
         font-size: 1.6em;
-        line-height: 2.4em; 
+        line-height: 2.6em; 
             
         }
 
+        
+section.imagem1 {
+    background-position: center bottom;
+    color: white;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.404);
+    
+}
+section.imagem2 {
+    color: white;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.404);
+    }
+
         footer {
-            font-size: 1.5em;
-            padding: 20px;
+            font-size: 1.1em;
+            padding: 10px;
             
         }
 }
