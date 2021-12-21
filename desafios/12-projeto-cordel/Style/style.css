@@ -1,0 +1,321 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'titulo';
+    src:  url('../fontes/Cordel Encarnado.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: 'cordel';
+        src:  url('../fontes/cordelina.otf') format('opentype');
+    }
+    
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+ html, body {
+    background-color: rgba(169, 169, 169, 0.178);
+    height: 100vh;
+}   
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;   
+ }
+
+ header > h1 {
+     font-family: 'titulo';
+     font-size: 4em;
+     font-weight: normal;
+    padding: 50px 0px 0px 0px;
+    font-variant: small-caps; 
+    
+}
+
+header > p {
+    padding: 0px 0px 50px 0px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none; 
+    font-weight: bolder; 
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;  
+}
+
+section {
+    font-family: 'cordel';
+    font-size: 1em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2.5em;
+    padding-left: 30px;
+}
+
+ section > p {
+     padding-bottom: 2em;
+     font-size: 1.2em;
+ }
+
+section.normal {
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0)
+}
+
+section.imagem1 {
+    color: white;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.404);
+    
+}
+section.imagem2 {
+    color: white;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.404);
+    }
+    
+
+section.imagem1 > p {
+    display: inline-block;
+    padding: 5px 0px 0px 15px;
+    height: 10%;
+    width: 40%;
+    margin-left: 55%;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.384);
+}
+
+section.imagem2 > p {
+    display: inline-block;
+    padding: 5px 0px 0px 15px;
+    height: 10%;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.555);
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    background-color: rgba(0, 0, 0, 0.479);
+    text-shadow: 2px 2px 0px black;
+    }
+
+
+section#img01 {
+    background-image: url('../imagens/imagem001.jpg.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+@media  ( min-width: 350px) and ( max-width: 768px) {
+
+    html, body {
+        background-color: rgba(169, 169, 169, 0.178);
+        height: 100vh;
+        }
+
+    header > p {
+        font-size: 0.8em;
+        padding-top: 5px;
+    }
+    
+    section > p {
+        font-size: 1em; 
+       
+
+        }
+
+        section#img01 {
+            flex-direction:column ;
+            background-position: right center;
+            position: relative;
+            background-position: left center;
+           
+        }
+
+        section.imagem1 > p {
+            display: block;
+            font-size: 15px;
+            margin-left: 5px;
+            width: 200px; 
+            height: 300px; 
+            font-size: 1em;
+           }
+        
+        section.imagem2 > p {
+        display: block;
+        font-size: 15px;
+        width: 200px; 
+        height: 300px; 
+        text-align: justify;  
+            
+        }
+
+        footer {
+            font-size: 0.7em;
+            
+        }
+}
+
+@media (min-width: 769px) and (max-width: 900px){ 
+
+    html, body {
+        background-color: rgba(169, 169, 169, 0.178);
+        height: 100vh;
+        }
+
+        header {
+            font-size: 1.6em;
+            padding-top: 50px;
+            padding-bottom:50px;
+
+        }
+        header > p {
+            font-size: 0.8em;
+            padding-top: 10px;
+        }
+    
+    
+    
+    section > p {
+        font-size: 2em;
+        line-height: 2.4em;
+        text-align: justify;
+             
+
+        }
+
+        section#img01 {
+            flex-direction:column ;
+            background-position: right center;
+            position: relative;
+            background-position: left center;
+           
+        }
+
+        section.imagem1 > p {
+            background-color: rgba(0, 0, 0, 0.363);
+            display: block;
+            padding-top: 30px;
+            font-size: 15px;
+            margin-left: 5px;
+            width: 300px; 
+            height: 450px; 
+            font-size: 1.5em;
+            line-height: 2.4em;
+            text-align: justify;
+            
+           }
+        
+        section.imagem2 > p {
+        background-color: rgba(0, 0, 0, 0.363);
+        display: block;
+        padding-top: 30px;
+        font-size: 15px;
+        margin-left: 5px;
+        width: 300px; 
+        height: 450px; 
+        font-size: 1.5em;
+        line-height: 2.4em; 
+            
+        }
+
+        footer {
+            font-size: 1.2em;
+            padding: 10px;
+            
+        }
+}
+
+@media (min-width: 901px) and (max-width: 1400px){ 
+
+    html, body {
+        background-color: rgba(169, 169, 169, 0.178);
+        height: 100vh;
+        }
+
+        header {
+            font-size: 2em;
+            padding-top: 50px;
+            padding-bottom:50px;
+
+        }
+        header > p {
+            font-size: 0.8em;
+            padding-top: 10px;
+        }
+    
+    
+    
+    section > p {
+        font-size: 2em;
+        line-height: 2.4em;
+        text-align: justify;
+             
+
+        }
+
+        section#img01 {
+            flex-direction:column ;
+            background-position: right center;
+            position: relative;
+            background-position: left center;
+           
+        }
+
+        section.imagem1 > p {
+            background-color: rgba(0, 0, 0, 0.363);
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 15px;
+        margin-left: 5px;
+        width: 300px; 
+        height: 450px; 
+        font-size: 1.6em;
+        line-height: 2.4em; ;
+            
+           }
+        
+        section.imagem2 > p {
+        background-color: rgba(0, 0, 0, 0.363);
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 15px;
+        margin-left: 5px;
+        width: 300px; 
+        height: 450px; 
+        font-size: 1.6em;
+        line-height: 2.4em; 
+            
+        }
+
+        footer {
+            font-size: 1.5em;
+            padding: 20px;
+            
+        }
+}
+
+
+
+
+
+
